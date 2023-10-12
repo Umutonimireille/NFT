@@ -120,10 +120,7 @@ export default function Stat() {
             </View>
           </View>
           <View style={styles.row}>
-            <Image
-              source={require("../assets/first.png")}
-              style={styles.image}
-            />
+            <FontAwesome name="chain" size={24} color="rgb(120 118 118)" />
             <View style={styles.column}>
               <Text>AZUMI</Text>
               <Text>view info</Text>
@@ -208,5 +205,19 @@ const styles = StyleSheet.create({
     display:'flex',
     flexDirection: 'row',
     justifyContent:'space-between',
+   },
+   row:{
+    display:'flex',
+    justifyContent:'space-between',
+    flexDirection: 'row',
+   },
+   column:{
+    display:'flex',
+    flexDirection: 'column',
+   },
+   image:{
+    width:20,
+    height:20,
+    borderRadius:5
    }
 });
