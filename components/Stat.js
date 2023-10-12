@@ -117,7 +117,11 @@ export default function Stat() {
             />
             <View style={styles.row}>
               <View style={styles.column}>
-                <Text>AZUMI</Text>
+                <Text  style= {{
+                  color:'fff',
+                  fontWeight:'bold',
+                  fontSize:20
+                }}>AZUMI</Text>
                 <Text>view info</Text>
               </View>
             </View>
@@ -221,8 +225,8 @@ const styles = StyleSheet.create({
     flexDirection: "column"
   },
   image: {
-    width: 20,
-    height: 20,
+    width: 50,
+    height: 50,
     borderRadius: 5
   },
 
@@ -230,6 +234,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     gap: 10,
-    alignItems: "flex-start",
+    marginLeft:-50
   }
 });
