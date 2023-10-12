@@ -244,7 +244,7 @@ const styles = StyleSheet.create({
   },
   selectedText: {
     color:'white',
-    borderBottomWidth: 1,
+    borderBottomWidth: 2,
     borderBottomColor: "#97A9F6"
   },
   separator: {
