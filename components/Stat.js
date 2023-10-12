@@ -18,7 +18,12 @@ export default function Stat() {
             flexDirection: "row"
           }}
         >
-          <AntDesign name="home" size={24} color="rgb(120 118 118)" />
+          <Ionicons
+            name="stats-chart"
+            size={24}
+            color="white"
+            onPress={handleStat}
+          />
           <Text
             style={{
               color: "rgb(120 118 118)",
@@ -57,7 +62,7 @@ export default function Stat() {
 
       <View style={styles.buttons}>
         <View style={styles.button}>
-          <AntDesign name="home" size={24} color="rgb(120 118 118)" />
+          <AntDesign name="minussquareo" size={24} color="rgb(120 118 118)" />
           <Text
             style={{
               color: "white"
@@ -66,10 +71,10 @@ export default function Stat() {
             {" "}
             All categories
           </Text>
-          <AntDesign name="home" size={24} color="rgb(120 118 118)" />
+          <AntDesign name="down" size={24} color="rgb(120 118 118)" />
         </View>
         <View style={styles.button}>
-          <AntDesign name="home" size={24} color="rgb(120 118 118)" />
+          <FontAwesome name="chain" size={24} color="rgb(120 118 118)" />
           <Text
             style={{
               color: "white"
@@ -78,14 +83,13 @@ export default function Stat() {
             {" "}
             All chains
           </Text>
-          <AntDesign name="home" size={24} color="rgb(120 118 118)" />
+          <AntDesign name="down" size={24} color="rgb(120 118 118)" />
         </View>
       </View>
 
       <View style={styles.sec}>
         <Text>dshfbhddhf</Text>
       </View>
-     
     </View>
   );
 }
