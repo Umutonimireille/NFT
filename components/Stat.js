@@ -110,19 +110,37 @@ export default function Stat() {
       <View style={styles.sec}>
         <View style={styles.category}>
           <View style={styles.all}>
-            <Text> 1</Text>
+            <Text
+              style={{
+                color: "rgb(120 118 118)",
+                fontSize: 20
+              }}
+            >
+             1
+            </Text>
             <Image
               source={require("../assets/first.png")}
               style={styles.image}
             />
             <View style={styles.row}>
               <View style={styles.column}>
-                <Text  style= {{
-                  color:'fff',
-                  fontWeight:'bold',
-                  fontSize:20
-                }}>AZUMI</Text>
-                <Text>view info</Text>
+                <Text
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: 20
+                  }}
+                >
+                  AZUMI
+                </Text>
+                <Text
+                  style={{
+                    color: "rgb(120 118 118)",
+                    fontSize: 15
+                  }}
+                >
+                  view info
+                </Text>
               </View>
             </View>
           </View>
@@ -130,8 +148,23 @@ export default function Stat() {
           <View style={styles.row}>
             <FontAwesome name="chain" size={24} color="rgb(120 118 118)" />
             <View style={styles.column}>
-              <Text>AZUMI</Text>
-              <Text>view info</Text>
+              <Text
+                style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: 20
+                }}
+              >
+                AZUMI
+              </Text>
+              <Text
+                style={{
+                  color: "rgb(120 118 118)",
+                  fontSize: 15
+                }}
+              >
+                view info
+              </Text>
             </View>
           </View>
         </View>
@@ -234,6 +267,6 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     gap: 10,
-    marginLeft:-50
+    marginLeft:-40
   }
 });
