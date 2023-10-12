@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
 
 export default function Stat() {
   const navigation = useNavigation();
@@ -116,7 +117,7 @@ export default function Stat() {
                 fontSize: 20
               }}
             >
-             1
+              1
             </Text>
             <Image
               source={require("../assets/first.png")}
@@ -146,7 +147,11 @@ export default function Stat() {
           </View>
 
           <View style={styles.row}>
-            <FontAwesome name="chain" size={24} color="rgb(120 118 118)" />
+            <MaterialCommunityIcons
+              name="pyramid"
+              size={24}
+              color="rgb(120 118 118)"
+            />
             <View style={styles.column}>
               <Text
                 style={{
@@ -155,15 +160,15 @@ export default function Stat() {
                   fontSize: 20
                 }}
               >
-                AZUMI
+                2000000
               </Text>
               <Text
                 style={{
-                  color: "rgb(120 118 118)",
+                  color: "#34C759",
                   fontSize: 15
                 }}
               >
-                view info
+                3.999%
               </Text>
             </View>
           </View>
