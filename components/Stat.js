@@ -173,6 +173,340 @@ export default function Stat() {
             </View>
           </View>
         </View>
+        {/* sec */}
+
+        <View style={styles.category}>
+          <View style={styles.all}>
+            <Text
+              style={{
+                color: "rgb(120 118 118)",
+                fontSize: 20
+              }}
+            >
+              1
+            </Text>
+            <Image
+              source={require("../assets/first.png")}
+              style={styles.image}
+            />
+            <View style={styles.row}>
+              <View style={styles.column}>
+                <Text
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: 20
+                  }}
+                >
+                  AZUMI
+                </Text>
+                <Text
+                  style={{
+                    color: "rgb(120 118 118)",
+                    fontSize: 15
+                  }}
+                >
+                  view info
+                </Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.row}>
+            <MaterialCommunityIcons
+              name="pyramid"
+              size={24}
+              color="rgb(120 118 118)"
+            />
+            <View style={styles.column}>
+              <Text
+                style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: 20
+                }}
+              >
+                2000000
+              </Text>
+              <Text
+                style={{
+                  color: "#34C759",
+                  fontSize: 15
+                }}
+              >
+                3.999%
+              </Text>
+            </View>
+          </View>
+        </View>
+        {/* third */}
+
+        <View style={styles.category}>
+          <View style={styles.all}>
+            <Text
+              style={{
+                color: "rgb(120 118 118)",
+                fontSize: 20
+              }}
+            >
+              1
+            </Text>
+            <Image
+              source={require("../assets/first.png")}
+              style={styles.image}
+            />
+            <View style={styles.row}>
+              <View style={styles.column}>
+                <Text
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: 20
+                  }}
+                >
+                  AZUMI
+                </Text>
+                <Text
+                  style={{
+                    color: "rgb(120 118 118)",
+                    fontSize: 15
+                  }}
+                >
+                  view info
+                </Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.row}>
+            <MaterialCommunityIcons
+              name="pyramid"
+              size={24}
+              color="rgb(120 118 118)"
+            />
+            <View style={styles.column}>
+              <Text
+                style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: 20
+                }}
+              >
+                2000000
+              </Text>
+              <Text
+                style={{
+                  color: "#34C759",
+                  fontSize: 15
+                }}
+              >
+                3.999%
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        {/* fouth  */}
+
+        <View style={styles.category}>
+          <View style={styles.all}>
+            <Text
+              style={{
+                color: "rgb(120 118 118)",
+                fontSize: 20
+              }}
+            >
+              1
+            </Text>
+            <Image
+              source={require("../assets/first.png")}
+              style={styles.image}
+            />
+            <View style={styles.row}>
+              <View style={styles.column}>
+                <Text
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: 20
+                  }}
+                >
+                  AZUMI
+                </Text>
+                <Text
+                  style={{
+                    color: "rgb(120 118 118)",
+                    fontSize: 15
+                  }}
+                >
+                  view info
+                </Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.row}>
+            <MaterialCommunityIcons
+              name="pyramid"
+              size={24}
+              color="rgb(120 118 118)"
+            />
+            <View style={styles.column}>
+              <Text
+                style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: 20
+                }}
+              >
+                2000000
+              </Text>
+              <Text
+                style={{
+                  color: "#34C759",
+                  fontSize: 15
+                }}
+              >
+                3.999%
+              </Text>
+            </View>
+          </View>
+        </View>
+        {/* fifth */}
+
+        <View style={styles.category}>
+          <View style={styles.all}>
+            <Text
+              style={{
+                color: "rgb(120 118 118)",
+                fontSize: 20
+              }}
+            >
+              1
+            </Text>
+            <Image
+              source={require("../assets/first.png")}
+              style={styles.image}
+            />
+            <View style={styles.row}>
+              <View style={styles.column}>
+                <Text
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: 20
+                  }}
+                >
+                  AZUMI
+                </Text>
+                <Text
+                  style={{
+                    color: "rgb(120 118 118)",
+                    fontSize: 15
+                  }}
+                >
+                  view info
+                </Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.row}>
+            <MaterialCommunityIcons
+              name="pyramid"
+              size={24}
+              color="rgb(120 118 118)"
+            />
+            <View style={styles.column}>
+              <Text
+                style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: 20
+                }}
+              >
+                2000000
+              </Text>
+              <Text
+                style={{
+                  color: "#34C759",
+                  fontSize: 15
+                }}
+              >
+                3.999%
+              </Text>
+            </View>
+          </View>
+        </View>
+        {/* sixth */}
+
+        <View style={styles.category}>
+          <View style={styles.all}>
+            <Text
+              style={{
+                color: "rgb(120 118 118)",
+                fontSize: 20
+              }}
+            >
+              1
+            </Text>
+            <Image
+              source={require("../assets/first.png")}
+              style={styles.image}
+            />
+            <View style={styles.row}>
+              <View style={styles.column}>
+                <Text
+                  style={{
+                    color: "white",
+                    fontWeight: "bold",
+                    fontSize: 20
+                  }}
+                >
+                  AZUMI
+                </Text>
+                <Text
+                  style={{
+                    color: "rgb(120 118 118)",
+                    fontSize: 15
+                  }}
+                >
+                  view info
+                </Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.row}>
+            <MaterialCommunityIcons
+              name="pyramid"
+              size={24}
+              color="rgb(120 118 118)"
+            />
+            <View style={styles.column}>
+              <Text
+                style={{
+                  color: "white",
+                  fontWeight: "bold",
+                  fontSize: 20
+                }}
+              >
+                2000000
+              </Text>
+              <Text
+                style={{
+                  color: "#34C759",
+                  fontSize: 15
+                }}
+              >
+                3.999%
+              </Text>
+            </View>
+          </View>
+        </View>
+        {/* sevnth */}
+
+        
       </View>
     </View>
   );
@@ -251,7 +585,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-around",
-    marginTop: 10
+    marginTop: 40
   },
   row: {
     display: "flex",
