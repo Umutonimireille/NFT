@@ -8,9 +8,10 @@ import {
   TouchableHighlight,
   Image
 } from "react-native";
-import { AntDesign, FontAwesome } from "@expo/vector-icons";
+import { AntDesign, FontAwesome,Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+
 
 export default function Stat() {
   const navigation = useNavigation();
@@ -624,7 +625,7 @@ const styles = StyleSheet.create({
     display: "flex",
     flexDirection: "row",
     gap: 10,
-    marginLeft:-40
+    marginLeft: -40
   },
   outer: {
     width: 60,
@@ -657,4 +658,20 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     zIndex: 10
   },
+  bar: {
+    height: 80,
+    backgroundColor: "#584175",
+    marginTop: 40,
+    borderWidth: 1, // Add a border
+    borderRadius: 50,
+    display: "flex",
+    flexDirection: "column",
+    alignContent: "center"
+  },
+  iconBar: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginTop: 20
+  }
 });
