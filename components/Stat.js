@@ -5,7 +5,8 @@ import {
   Text,
   View,
   ScrollView,
-  TouchableHighlight
+  TouchableHighlight,
+  Image
 } from "react-native";
 import { AntDesign, FontAwesome } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
@@ -107,16 +108,19 @@ export default function Stat() {
       </View>
 
       <View style={styles.sec}>
-        <Text> 1</Text>
+        {/* <Text> 1</Text> */}
         <View style={styles.category}>
-          <View style={styles.row}>
-            <Image
-              source={require("../assets/first.png")}
-              style={styles.image}
-            />
-            <View style={styles.column}>
-              <Text>AZUMI</Text>
-              <Text>view info</Text>
+          <View style={styles.rows}>
+            <Text> 1</Text>
+            <View style={styles.row}>
+              <Image
+                source={require("../assets/first.png")}
+                style={styles.image}
+              />
+              <View style={styles.column}>
+                <Text>AZUMI</Text>
+                <Text>view info</Text>
+              </View>
             </View>
           </View>
           <View style={styles.row}>
@@ -204,7 +208,7 @@ const styles = StyleSheet.create({
    category: {
     display:'flex',
     flexDirection: 'row',
-    justifyContent:'space-between',
+    justifyContent:'space-around',
    },
    row:{
     display:'flex',
@@ -219,5 +223,11 @@ const styles = StyleSheet.create({
     width:20,
     height:20,
     borderRadius:5
+   },
+   rows:{ 
+    display:'flex',
+    flexDirection: 'row',
+    justifyContent:'space-around',
+
    }
 });
