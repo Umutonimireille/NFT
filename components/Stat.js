@@ -110,7 +110,7 @@ export default function Stat() {
       <View style={styles.sec}>
        
         <View style={styles.category}>
-          <View style={all}>
+          <View style={styles.all}>
             <Text> 1</Text>
             <View style={styles.row}>
               <Image
@@ -230,6 +230,6 @@ const styles = StyleSheet.create({
    all:{
     display:'flex',
     flexDirection: 'row',
-    justifyContent:'space-around',
+    gap:10
    }
 });
