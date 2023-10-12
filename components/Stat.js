@@ -18,12 +18,7 @@ export default function Stat() {
             flexDirection: "row"
           }}
         >
-          <Ionicons
-            name="stats-chart"
-            size={24}
-            color="white"
-            onPress={handleStat}
-          />
+          <AntDesign name="home" size={24} color="rgb(120 118 118)" />
           <Text
             style={{
               color: "rgb(120 118 118)",
