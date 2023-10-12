@@ -108,21 +108,19 @@ export default function Stat() {
       </View>
 
       <View style={styles.sec}>
-       
         <View style={styles.category}>
           <View style={styles.all}>
             <Text> 1</Text>
+            <Image
+              source={require("../assets/first.png")}
+              style={styles.image}
+            />
             <View style={styles.row}>
-              <Image
-                source={require("../assets/first.png")}
-                style={styles.image}
-              />
               <View style={styles.column}>
                 <Text>AZUMI</Text>
                 <Text>view info</Text>
               </View>
-            
-          </View>
+            </View>
           </View>
 
           <View style={styles.row}>
@@ -230,6 +228,8 @@ const styles = StyleSheet.create({
    all:{
     display:'flex',
     flexDirection: 'row',
-    gap:10
+    gap:10,
+    marginLeft:-50
+   
    }
 });
