@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import {
   StyleSheet,
@@ -106,7 +107,14 @@ export default function Stat() {
       </View>
 
       <View style={styles.sec}>
-        <Text>dshfbhddhf</Text>
+      <View style={styles.category}>
+      <Text> 1</Text>
+      <View>
+        
+      </View>
+
+      </View>
+        
       </View>
 
      
