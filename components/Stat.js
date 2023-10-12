@@ -184,7 +184,15 @@ export default function Stat() {
         >
           <View style={styles.iconTextWrapper}>
             <AntDesign name="home" size={24} color="rgb(120 118 118)" />
-            <Text style={styles.iconText}>Ranking</Text>
+            <Text
+              style={
+                isRankingPressed
+                  ? [styles.iconText, styles.selectedText]
+                  : styles.iconText
+              }
+            >
+              Ranking
+            </Text>
           </View>
         </TouchableHighlight>
 
@@ -199,7 +207,15 @@ export default function Stat() {
         >
           <View style={styles.iconTextWrapper}>
             <AntDesign name="home" size={24} color="rgb(120 118 118)" />
-            <Text style={styles.iconText}>Activity</Text>
+            <Text
+              style={
+                isActivityPressed
+                  ? [styles.iconText, styles.selectedText]
+                  : styles.iconText
+              }
+            >
+              Activity
+            </Text>
           </View>
         </TouchableHighlight>
       </View>
@@ -243,8 +259,8 @@ const styles = StyleSheet.create({
     color: "rgb(120 118 118)"
   },
   selectedText: {
-    color:'white',
-    borderBottomWidth: 2,
+    color: "white", // Change the text color to white
+    borderBottomWidth: 1,
     borderBottomColor: "#97A9F6"
   },
   separator: {
