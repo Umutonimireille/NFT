@@ -195,41 +195,41 @@ const styles = StyleSheet.create({
     height: 1,
     marginTop: 10
   },
-    sec: {
-      width: "95%",
-      height: "65vh", // Replace "65h" with "65"
-      backgroundColor: "#584175",
-      marginLeft: 8,
-      marginTop: 10,
-      borderWidth: 1,
-      borderRadius: 10
-    },
+  sec: {
+    width: "95%",
+    height: "65vh", // Replace "65h" with "65"
+    backgroundColor: "#584175",
+    marginLeft: 8,
+    marginTop: 10,
+    borderWidth: 1,
+    borderRadius: 10
+  },
 
-   category: {
-    display:'flex',
-    flexDirection: 'row',
-    justifyContent:'space-around',
-   },
-   row:{
-    display:'flex',
-    justifyContent:'space-around',
-    flexDirection: 'row',
-   },
-   column:{
-    display:'flex',
-    flexDirection: 'column',
-   },
-   image:{
-    width:20,
-    height:20,
-    borderRadius:5
-   },
-  
-   all:{
-    display:'flex',
-    flexDirection: 'row',
-    gap:10,
-    marginLeft:-50
-   
-   }
+  category: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-around",
+    marginTop: 10
+  },
+  row: {
+    display: "flex",
+    justifyContent: "space-around",
+    flexDirection: "row"
+  },
+  column: {
+    display: "flex",
+    flexDirection: "column"
+  },
+  image: {
+    width: 20,
+    height: 20,
+    borderRadius: 5
+  },
+
+  all: {
+    display: "flex",
+    flexDirection: "row",
+    gap: 10,
+    alignItems: "flex-start",
+  }
 });
