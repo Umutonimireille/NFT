@@ -108,9 +108,9 @@ export default function Stat() {
       </View>
 
       <View style={styles.sec}>
-        {/* <Text> 1</Text> */}
+       
         <View style={styles.category}>
-          <View style={styles.rows}>
+          <View style={all}>
             <Text> 1</Text>
             <View style={styles.row}>
               <Image
@@ -121,8 +121,10 @@ export default function Stat() {
                 <Text>AZUMI</Text>
                 <Text>view info</Text>
               </View>
-            </View>
+            
           </View>
+          </View>
+
           <View style={styles.row}>
             <FontAwesome name="chain" size={24} color="rgb(120 118 118)" />
             <View style={styles.column}>
@@ -212,7 +214,7 @@ const styles = StyleSheet.create({
    },
    row:{
     display:'flex',
-    justifyContent:'space-between',
+    justifyContent:'space-around',
     flexDirection: 'row',
    },
    column:{
@@ -224,10 +226,10 @@ const styles = StyleSheet.create({
     height:20,
     borderRadius:5
    },
-   rows:{ 
+  
+   all:{
     display:'flex',
     flexDirection: 'row',
     justifyContent:'space-around',
-
    }
 });
