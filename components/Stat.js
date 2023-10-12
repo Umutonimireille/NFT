@@ -504,9 +504,27 @@ export default function Stat() {
             </View>
           </View>
         </View>
-        {/* sevnth */}
+      </View>
 
-        
+      {/* bar */}
+
+      <View style={styles.bar}>
+        <View style={styles.iconBar}>
+          <AntDesign name="home" size={24} color="white" />
+          <Ionicons
+            name="stats-chart"
+            size={24}
+            color="white"
+            onPress={handleStat}
+          />
+          {/* <AntDesign name="home" size={24} color="black" /> */}
+          <View style={styles.outer}>
+            <Text style={styles.plus}>+</Text>
+            <View style={styles.inner}></View>
+          </View>
+          <FontAwesome name="search" size={24} color="white" />
+          <Ionicons name="person" size={24} color="white" />
+        </View>
       </View>
     </View>
   );
@@ -607,5 +625,36 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     gap: 10,
     marginLeft:-40
-  }
+  },
+  outer: {
+    width: 60,
+    height: 60,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "transparent",
+    transform: [{ rotate: "45deg" }],
+    overflow: "hidden",
+    backgroundColor: "#D3B9EB",
+    position: "absolute", // Position the circular button absolutely
+    bottom: 10 // Adjust this value as needed
+    // left: "50%", // Center the button horizontally
+    // marginLeft: -30, // Correct the position
+    // borderRadius: 30 // Make it circular
+  },
+  inner: {
+    // width: "111%",
+    // height: "111%",
+    backgroundColor: "transparent",
+    transform: [{ rotate: "-45deg" }]
+    // borderWidth: 2,
+    // borderColor: "red"
+  },
+  plus: {
+    position: "absolute",
+
+    fontSize: 30,
+    fontWeight: "bold",
+    zIndex: 10
+  },
 });
