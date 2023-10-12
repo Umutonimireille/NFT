@@ -225,6 +225,7 @@ export default function Stat() {
       <View style={styles.buttons}>
         {/* Rest of your code remains the same */}
       </View>
+      
     </View>
   );
 }
