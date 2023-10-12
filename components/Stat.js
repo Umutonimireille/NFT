@@ -79,10 +79,10 @@ export default function Stat() {
       </View>
 
       <View style={styles.separator} />
-       <View style={styles.buttons}>
+      <View style={styles.buttons}>
         <View style={styles.button}>
           <AntDesign name="minussquareo" size={24} color="rgb(120 118 118)" />
-         <Text
+          <Text
             style={{
               color: "white"
             }}
@@ -107,18 +107,30 @@ export default function Stat() {
       </View>
 
       <View style={styles.sec}>
-      <View style={styles.category}>
-      <Text> 1</Text>
-      <View>
-        
+        <Text> 1</Text>
+        <View style={styles.category}>
+          <View style={styles.row}>
+            <Image
+              source={require("../assets/first.png")}
+              style={styles.image}
+            />
+            <View style={styles.column}>
+              <Text>AZUMI</Text>
+              <Text>view info</Text>
+            </View>
+          </View>
+          <View style={styles.row}>
+            <Image
+              source={require("../assets/first.png")}
+              style={styles.image}
+            />
+            <View style={styles.column}>
+              <Text>AZUMI</Text>
+              <Text>view info</Text>
+            </View>
+          </View>
+        </View>
       </View>
-
-      </View>
-        
-      </View>
-
-     
-      
     </View>
   );
 }
@@ -190,6 +202,11 @@ const styles = StyleSheet.create({
       marginTop: 10,
       borderWidth: 1,
       borderRadius: 10
-    }
-  // Rest of your styles remain the same
+    },
+
+   category: {
+    display:'flex',
+    flexDirection: 'row',
+    justifyContent:'space-between',
+   }
 });
