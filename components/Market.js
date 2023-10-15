@@ -193,7 +193,7 @@ const styles = StyleSheet.create({
 
   container: {
     flex: 1,
-    backgroundColor: "#211134"
+    backgroundColor: "#1D1A3B"
     // alignItems: "center"
   },
   title: {
