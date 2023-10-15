@@ -44,7 +44,7 @@ export default function HomeScreen() {
         >
           <Text
             style={{
-              color: "white",
+              color: "#211134",
               fontWeight: "bold",
               fontSize: 20,
               marginTop: 20
@@ -61,7 +61,7 @@ export default function HomeScreen() {
             You can buy and sell the NFTs of the best artists in the world.
           </Text>
           <TouchableOpacity style={styles.button} onPress={handleGetStarted}>
-            <Text style={{ color: "white" }}>Get Started Now</Text>
+            <Text style={{ color: "#211134" }}>Get Started Now</Text>
           </TouchableOpacity>
         </View>
       </ImageBackground>
@@ -85,7 +85,7 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   headerText: {
-    color: "#ffffff",
+    color: "#211134",
     textAlign: "center",
     fontWeight: "bold",
     fontSize: 24
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     width: 200,
     height: 50,
-    backgroundColor: "#664b78",
+    backgroundColor: "#5352A6",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",

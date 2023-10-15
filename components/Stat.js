@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {
   StyleSheet,
@@ -11,12 +10,17 @@ import {
 import { AntDesign, FontAwesome,Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { Feather } from "@expo/vector-icons";
 
 
 export default function Stat() {
   const navigation = useNavigation();
   const [isRankingPressed, setIsRankingPressed] = useState(false);
   const [isActivityPressed, setIsActivityPressed] = useState(false);
+
+  const handleHome = () => {
+    navigation.navigate('Home');
+  }
 
   const handleRankingPress = () => {
     setIsRankingPressed(true);
@@ -44,7 +48,7 @@ export default function Stat() {
           }
         >
           <View style={styles.iconTextWrapper}>
-            <AntDesign name="home" size={24} color="rgb(120 118 118)" />
+            <Ionicons name="stats-chart" size={24} color="rgb(120 118 118)" />
             <Text
               style={
                 isRankingPressed
@@ -67,7 +71,7 @@ export default function Stat() {
           }
         >
           <View style={styles.iconTextWrapper}>
-            <AntDesign name="home" size={24} color="rgb(120 118 118)" />
+            <Feather name="activity" size={24} color="rgb(120 118 118)" />
             <Text
               style={
                 isActivityPressed
@@ -184,7 +188,7 @@ export default function Stat() {
                 fontSize: 20
               }}
             >
-              1
+              2
             </Text>
             <Image
               source={require("../assets/first.png")}
@@ -250,7 +254,7 @@ export default function Stat() {
                 fontSize: 20
               }}
             >
-              1
+              3
             </Text>
             <Image
               source={require("../assets/first.png")}
@@ -317,7 +321,7 @@ export default function Stat() {
                 fontSize: 20
               }}
             >
-              1
+              4
             </Text>
             <Image
               source={require("../assets/first.png")}
@@ -383,7 +387,7 @@ export default function Stat() {
                 fontSize: 20
               }}
             >
-              1
+              5
             </Text>
             <Image
               source={require("../assets/first.png")}
@@ -449,7 +453,7 @@ export default function Stat() {
                 fontSize: 20
               }}
             >
-              1
+              6
             </Text>
             <Image
               source={require("../assets/first.png")}
@@ -511,14 +515,15 @@ export default function Stat() {
 
       <View style={styles.bar}>
         <View style={styles.iconBar}>
-          <AntDesign name="home" size={24} color="white" />
+          <AntDesign name="home" size={24} color="white"
+          onPress={handleHome} />
           <Ionicons
             name="stats-chart"
             size={24}
             color="white"
-            onPress={handleStat}
+           
           />
-          {/* <AntDesign name="home" size={24} color="black" /> */}
+         
           <View style={styles.outer}>
             <Text style={styles.plus}>+</Text>
             <View style={styles.inner}></View>
@@ -593,7 +598,7 @@ const styles = StyleSheet.create({
   sec: {
     width: "95%",
     height: "65vh", // Replace "65h" with "65"
-    backgroundColor: "#584175",
+    backgroundColor: "#2C2E70",
     marginLeft: 8,
     marginTop: 10,
     borderWidth: 1,
@@ -636,7 +641,7 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     transform: [{ rotate: "45deg" }],
     overflow: "hidden",
-    backgroundColor: "#D3B9EB",
+    backgroundColor: "#F7DFF2",
     position: "absolute", // Position the circular button absolutely
     bottom: 10 // Adjust this value as needed
     // left: "50%", // Center the button horizontally
@@ -659,8 +664,8 @@ const styles = StyleSheet.create({
     zIndex: 10
   },
   bar: {
-    height: 80,
-    backgroundColor: "#584175",
+    height: 60,
+    backgroundColor: "#2C2E70",
     marginTop: 40,
     borderWidth: 1, // Add a border
     borderRadius: 50,

@@ -30,6 +30,7 @@ export default function App() {
           options={{ headerShown: false }} // Hide the header for Market screen
         />
       </Stack.Navigator>
+     
 
       
     </NavigationContainer>

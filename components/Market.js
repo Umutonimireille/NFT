@@ -12,8 +12,12 @@ const navigation = useNavigation();
 
  const handleStat = () => {
    // Navigate to the "Market" screen
-   navigation.navigate("Stat");
+   navigation.navigate("Stat"); 
  };
+
+ const handleHome = () => {
+  navigation.navigate("Home");
+ }
 
   return (
     <View style={styles.container}>
@@ -132,7 +136,9 @@ const navigation = useNavigation();
 
       <View style={styles.bar}>
         <View style={styles.iconBar}>
-          <AntDesign name="home" size={24} color="white" />
+          <AntDesign name="home" size={24} color="white" 
+            onPress={handleHome}
+          />
           <Ionicons
             name="stats-chart"
             size={24}
@@ -162,7 +168,7 @@ const styles = StyleSheet.create({
     backgroundColor: "transparent",
     transform: [{ rotate: "45deg" }],
     overflow: "hidden",
-    backgroundColor: "#D3B9EB",
+    backgroundColor: "#F7DFF2",
     position: "absolute", // Position the circular button absolutely
     bottom: 10 // Adjust this value as needed
     // left: "50%", // Center the button horizontally
@@ -236,7 +242,7 @@ const styles = StyleSheet.create({
   },
   bar: {
     height: 80,
-    backgroundColor: "#584175",
+    backgroundColor: "#2C2E70",
     marginTop: 40,
     borderWidth: 1, // Add a border
     borderRadius: 50,
