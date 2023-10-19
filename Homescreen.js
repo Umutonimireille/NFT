@@ -18,7 +18,7 @@ export default function HomeScreen() {
     navigation.navigate("Market");
   };
 
-  console.log('hallo there');
+  // console.log('hallo there');
 
   return (
     <View style={styles.container}>
@@ -47,7 +47,8 @@ export default function HomeScreen() {
               color: "#211134",
               fontWeight: "bold",
               fontSize: 20,
-              marginTop: 20
+              marginTop: 20,
+              textAlign: "center"
             }}
           >
             Explore and mint NFTs

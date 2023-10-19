@@ -22,6 +22,10 @@ export default function Stat() {
     navigation.navigate('Home');
   }
 
+  const handleDashBoard = () => {
+    navigation.navigate("DashBoard");
+  }
+
   const handleRankingPress = () => {
     setIsRankingPressed(true);
     setIsActivityPressed(false);
@@ -515,21 +519,20 @@ export default function Stat() {
 
       <View style={styles.bar}>
         <View style={styles.iconBar}>
-          <AntDesign name="home" size={24} color="white"
-          onPress={handleHome} />
-          <Ionicons
-            name="stats-chart"
-            size={24}
-            color="white"
-           
-          />
-         
+          <AntDesign name="home" size={24} color="white" onPress={handleHome} />
+          <Ionicons name="stats-chart" size={24} color="white" />
+
           <View style={styles.outer}>
             <Text style={styles.plus}>+</Text>
             <View style={styles.inner}></View>
           </View>
           <FontAwesome name="search" size={24} color="white" />
-          <Ionicons name="person" size={24} color="white" />
+          <Ionicons
+            name="person"
+            size={24}
+            color="white"
+            onPress={handleDashBoard}
+          />
         </View>
       </View>
     </View>

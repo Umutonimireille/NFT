@@ -15,6 +15,11 @@ const navigation = useNavigation();
    navigation.navigate("Stat"); 
  };
 
+  const handleDashBoard = () => {
+    navigation.navigate("DashBoard");
+  };
+
+
  const handleHome = () => {
   navigation.navigate("Home");
  }
@@ -136,9 +141,7 @@ const navigation = useNavigation();
 
       <View style={styles.bar}>
         <View style={styles.iconBar}>
-          <AntDesign name="home" size={24} color="white" 
-            onPress={handleHome}
-          />
+          <AntDesign name="home" size={24} color="white" onPress={handleHome} />
           <Ionicons
             name="stats-chart"
             size={24}
@@ -151,7 +154,12 @@ const navigation = useNavigation();
             <View style={styles.inner}></View>
           </View>
           <FontAwesome name="search" size={24} color="white" />
-          <Ionicons name="person" size={24} color="white" />
+          <Ionicons
+            name="person"
+            size={24}
+            color="white"
+            onPress={handleDashBoard}
+          />
         </View>
       </View>
     </View>
